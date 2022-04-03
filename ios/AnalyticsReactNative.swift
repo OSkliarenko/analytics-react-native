@@ -1,4 +1,6 @@
-import CoreTelephony
+#if canImport(CoreTelephony)
+  import CoreTelephony
+#endif
 import SystemConfiguration
 import UIKit
 import AdSupport
@@ -54,7 +56,8 @@ public class AnalyticsReactNative: NSObject {
         let isWWAN = flags.contains(.isWWAN)
 
         if isReachable {
-            if isWWAN {
+#if os(iOS)
+          if isWWAN {
                 let networkInfo = CTTelephonyNetworkInfo()
 
                 if #available(iOS 12.1, *) {
@@ -73,8 +76,8 @@ public class AnalyticsReactNative: NSObject {
             } else {
                 return ConnectionType.wifi
             }
+#endif
         }
-
         return ConnectionType.unknown
     }
 

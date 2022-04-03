@@ -76,6 +76,8 @@ public class AnalyticsReactNative: NSObject {
             } else {
                 return ConnectionType.wifi
             }
+#elseif os(tvOS)
+          return ConnectionType.wifi
 #endif
         }
         return ConnectionType.unknown

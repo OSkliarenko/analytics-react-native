@@ -35,7 +35,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/segmentio/analytics-react-native.git"
+    "url": "https://github.com/OSkliarenko/analytics-react-native.git"
   },
   "author": "Segment <hello@segment.com> (https://segment.com/)",
   "license": "MIT",

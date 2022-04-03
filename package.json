@@ -45,7 +45,7 @@
   "homepage": "https://github.com/segmentio/analytics-react-native#readme",
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.17",
-    "@segment/sovran-react-native": "^0.2.6",
+    "@segment/sovran-react-native": "https://github.com/OSkliarenko/sovran-react-native.git",
     "js-base64": "^3.7.2",
     "nanoid": "^3.1.25"
   },
